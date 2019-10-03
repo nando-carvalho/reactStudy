@@ -1,9 +1,26 @@
 import React from  'react';
 
-import Contador from './Contador';
+import PlacarContainer from './PlacarContainer';
+
+const dados = {
+    partida: {
+        estadio: "Maracanã/RJ",
+        data: "01/06/2019",
+        horario: "19h",
+    },
+    casa: {
+        nome: "Flamengo",
+    },
+    visitante: {
+        nome: "Botafogo",
+    }
+};
 
 export default class App extends React.Component {
     render() {
-        return <Contador />;        
+        return <PlacarContainer
+            partida={dados.Partida}
+            casa={dados.casa}
+            visitante={dados.visitante} />;
     }
 }

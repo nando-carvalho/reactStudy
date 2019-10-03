@@ -4,12 +4,12 @@ export default class Partida extends React.Component {
     render() {
         return (
             <div>
-                <h3>Estádio</h3>
+                <h3>{this.props.estadio}</h3>
                 <div>
-                    <span>Data</span>
+                    <span>{this.props.data}</span>
                     <span>-</span>
-                    <span>Hora</span>
-                </div>    
+                    <span>{this.props.horario}</span>
+                </div>
             </div>
         );
     }

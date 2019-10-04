@@ -23,6 +23,6 @@ export default class App extends React.Component {
         //     casa={dados.casa}
         //     visitante={dados.visitante} />;
         // Refatorando - posso refazer isso da forma abaixo
-        return <PlacarContainer {...dados} />;
+        return <PlacarContainer {...dados} clima={'Ensolarado'} tempo={92} />;
     }
 }
